@@ -13,7 +13,7 @@ pub struct Client {
 }
 
 impl Client {
-    /// Create a new orchid client
+    /// Create a new malevolence client
     #[must_use]
     pub fn new(key: Option<String>) -> Self {
         Self {
@@ -22,7 +22,7 @@ impl Client {
         }
     }
 
-    /// Create a new orchid client with the supplied reqwest client
+    /// Create a new malevolence client with the supplied reqwest client
     #[must_use]
     pub const fn with(client: reqwest::Client, key: Option<String>) -> Self {
         Self { client, key }
